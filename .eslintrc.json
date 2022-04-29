@@ -1,0 +1,41 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jest": true,
+    "jasmine": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@next/next/recommended",
+    "plugin:@next/next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "globals": {},
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "import/named": 0,
+    "import/no-duplicates": 0,
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "prettier/prettier": 2,
+    "no-alert": 2,
+    "no-console": 1,
+    "no-debugger": 2,
+    "no-unused-vars": 0,
+    "no-irregular-whitespace": 0
+  }
+}
