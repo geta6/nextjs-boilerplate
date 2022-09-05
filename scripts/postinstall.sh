@@ -15,7 +15,7 @@ else
   echo 'direnv skipped.'
 fi
 
-if [ ! -f "${BASEDIR}/../app/.env" ]; then
+if [ ! -f "${BASEDIR}/../app/.env" -a -f "${BASEDIR}/../.env.example" ]; then
   echo "!! Copy to local env file"
   cp -fv "${BASEDIR}/../.env.example" "${BASEDIR}/../app/.env"
 fi
